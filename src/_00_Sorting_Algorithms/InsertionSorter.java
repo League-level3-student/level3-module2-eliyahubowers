@@ -12,7 +12,16 @@ public class InsertionSorter extends Sorter {
 	void sort(int[] array, SortingVisualizer display) {		
 		//1. make a for loop that starts at 1 and goes through 
 		// the length of the array 
-
+		for(int i = 0; i < array.length; i++) {
+			for(int j = i; j > 0; j++) {
+				if(array[j] < array[j-1]) {
+					int k = array[j];
+					array[j] = array[j-1];
+					array[j-1] = k;
+				}
+				display.updateDisplay();
+			}
+		}
 			//2. make another for loop that starts at i and counts down
         	//   while j is greater than 0
 
