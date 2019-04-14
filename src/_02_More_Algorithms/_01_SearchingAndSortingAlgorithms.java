@@ -22,12 +22,12 @@ public class _01_SearchingAndSortingAlgorithms {
 	}
 
 	/* 2. Count how many oysters contain pearls. */
-//	@Test
-//	public void testSearchAndAccumulate() throws Exception {
-//		List<Boolean> oysters = Arrays.asList(new Boolean[] { false, false, true, false, false, false, false, false, false, false, false,
-//				false, false, false, false, false, false, false, false, false, false, false, false, true });
-//		assertEquals(2, Algorithms.countPearls(oysters));
-//	}
+	@Test
+	public void testSearchAndAccumulate() throws Exception {
+		List<Boolean> oysters = Arrays.asList(new Boolean[] { false, false, true, false, false, false, false, false, false, false, false,
+				false, false, false, false, false, false, false, false, false, false, false, false, true });
+		assertEquals(2, Algorithms.countPearls(oysters));
+	}
 
 	/* 3. Create a method that will return the height of the tallest person. */
 //	@Test
